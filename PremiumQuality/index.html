@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Menú Lateral</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="sidebar">
+        <img src="./imag/LOGO BLANCO.png" alt="">
+        <a href="#Inventario">Inventario</a>
+        <a href="#Ventas">Ventas</a>
+        <a href="#Taller">Taller</a>
+        <a href="#Empleados">Empleados</a>
+    </div>
+
+    <div class="content">
+        <h1>Filtros:</h1>
+         <div class="secciondrop">
+            
+            <form class="dropdown-form">
+                <div class="dropdown-item">
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca">
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </div>
+    
+                <div class="dropdown-item">
+                    <label for="color">Color:</label>
+                    <select id="color" name="color">
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                        <option value="negro">Negro</option>
+                    </select>
+                </div>
+    
+                <div class="dropdown-item">
+                    <label for="modelo">Modelo:</label>
+                    <select id="modelo" name="modelo">
+                        <option value="sedan">Sedán</option>
+                        <option value="suv">SUV</option>
+                        <option value="camioneta">Camioneta</option>
+                    </select>
+                </div>
+            </form>
+         </div>
+        
+         <section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Fiat Cronos</span>
+                    <img src="../imag/AUTO1.jpg" alt="FIAT CRONOS" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Peugeot 208</span>
+                    <img src="../imag/AUTO2.jpg" alt="Peugeot 208" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Toyota Hilux</span>
+                    <img src="../imag/AUTO3.jpg" alt="toyota" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Toyota Etios</span>
+                    <img src="../imag/AUTO4.jpg" alt="toyota etios" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Toyota Yaris</span>
+                    <img src="../imag/AUTO5.jpg" alt="Toyota Yaris" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Renault Sandero</span>
+                    <img src="../imag/AUTO6.jpg" alt="Renault Sandero" class="img-item">
+                    <div class="seccColores">
+
+                        <span class="colores-item">colores:</span>
+                        <div class="circle-container">
+                            <div class="circle redwine" data-tooltip="Redwine"></div>
+                            <div class="circle grey" data-tooltip="gris ceniza"></div>
+                            <div class="circle black" data-tooltip="black"></div>
+                            <div class="circle white" data-tooltip="white"></div>
+                            <div class="circle blue" data-tooltip="azul"></div>
+                        </div>
+
+                    </div>
+                    <button class="boton-item">Seleccionar</button>
+                </div>
+
+                <div class="butonAgregar">+
+                </div>
+                
+                
+                
+                
+            </div>
+            
+        </section>
+    </div>
+    
+</body>
+</html>

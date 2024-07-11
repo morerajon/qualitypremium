@@ -1,0 +1,210 @@
+*{
+    background-color: #f5f5f5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    
+    
+}
+
+.sidebar {
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2D3B40;
+    justify-content: center;
+    text-align: center;
+  
+}
+img{
+    padding:10px 50px 10px 50px;
+    width: 50%;
+    height: 15vh;
+    background-color: transparent;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.7em;
+    color:#f5f5f5;
+    display: block;
+    background-color: #2D3B40;
+    border: 2px solid #263137;
+}
+
+.sidebar a:hover {
+    background-color: #455457;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    width: 100%;
+}
+
+.dropdown-form {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila */
+    gap: 20px; /* Espacio entre los elementos */
+    
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espacio entre el label y el select */
+    
+}
+
+.dropdown-item label {
+    margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+    
+}
+
+.dropdown-item select {
+    padding: 5px 20px;
+    font-size: 18px;
+    background-color: #D9D9D9;
+    color: #464343;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+    grid-row-gap: 30px;
+    /* width: 60%; */
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 22vw;
+    margin: auto;
+    border: 1px solid #666;
+    transition: .3s;
+    background-color: #ffffff;
+    height: 40vh;
+}
+.contenedor .contenedor-items .item .img-item{
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 70%;    
+}
+
+.seccColores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color:white ;
+    background-color: #2A373D;
+    font-size: 1.5em;
+}
+.contenedor .contenedor-items .item .colores-item{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #5f5d5d;
+    padding-left: 10px;
+    width: 50%;
+    display: flex;
+}
+
+.contenedor .contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #0388A6;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+.circle-container {
+    display: flex;
+    gap: 2px; /* Espacio entre los círculos */
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: relative; /* Necesario para el posicionamiento del tooltip */
+}
+
+.circle::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 110%; /* Posición por encima del círculo */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Evita que el tooltip interfiera con el hover */
+}
+
+.circle:hover::after {
+    opacity: 1;
+}
+
+.redwine{
+    background-color: #A70003;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: #D9D9D9;
+}
+
+.grey{
+    background-color: #706d6d;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.butonAgregar{
+    position: fixed;
+    width: 80px;
+    height:80px;
+    background-color: #2A373D;
+    color: #D9D9D9;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 4em;
+    bottom: 10px;
+    right: 10px;
+
+}
